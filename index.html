@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Regular Show Themed Joke Website</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/parallax.js"></script>
+	<script src="js/joke.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul id="scene">
+			<li class="layer" id="mordy" data-depth="0.08"><img src="assets/mordy.png"></li>
+			<li class="layer" id="rigby" data-depth="0.09"><img src="assets/rigby.png"></li>
+			<li class="layer" id="benson" data-depth="0.06"><img src="assets/benson.png"></li>
+			<li class="layer" id="mman" data-depth="0.045"><img src="assets/mman.png"></li>
+			<li class="layer" id="rslogo" data-depth="0.15"><img src="assets/rslogo.png"></li>
+
+			<li class="layer" id="joketext" data-depth="0.08"><h1 id="jtext">Click the button below to get started!</h1></li>
+
+			<li class="layer" id="jokebutton" data-depth="0.1">
+				<button id="jbutton" onclick="tellJoke();"></button>
+			</li>
+
+			<li class="layer" id="bg" data-depth="0.02"><img src="assets/bg/bg.png"></li>
+			<li class="layer" id="brighthill" data-depth="0.05"><img src="assets/bg/brighthill.png"></li>
+			<li class="layer" id="largehill" data-depth="0.1"><img src="assets/bg/largehill.png"></li>
+			<li class="layer" id="ltree" data-depth="0.06"><img src="assets/bg/ltree.png"></li>
+			<li class="layer" id="rtree" data-depth="0.05"><img src="assets/bg/rtree.png"></li>
+			<li class="layer" id="lshrubbery" data-depth="0.04"><img src="assets/bg/lshrubbery.png"></li>
+			<li class="layer" id="rshrubbery" data-depth="0.03"><img src="assets/bg/rshrubbery.png"></li>
+		</ul>
+	</div>
+
+	<script>
+		var scene = document.getElementById('scene');
+		var parallaxInstance = new Parallax(scene);
+		parallaxInstance.scalar(45, 45);
+	</script>
+	
+	<svg height="0" xmlns="http://www.w3.org/2000/svg" id="svg">
+		<filter id="drop-shadow">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+			<feOffset dx="-6" dy="6" result="offsetblur"/>
+			<feFlood flood-color="rgba(0,0,0,0.2)"/>
+			<feComposite in2="offsetblur" operator="in"/>
+			<feMerge>
+				<feMergeNode/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+	</svg>
+</body>
+</html>

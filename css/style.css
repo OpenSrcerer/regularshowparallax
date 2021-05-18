@@ -1,0 +1,172 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0;
+	overflow: hidden;
+	background: url(../assets/background.png);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	min-width: 100%;
+  	min-height: 100%;
+}
+
+.layer {
+    filter: url(#drop-shadow);
+	z-index: 10;
+}
+
+.layer > img {
+	width: 100%;
+	height: auto;
+}
+
+#joketext {
+	font-family: 'the_rainmakerregular';
+	font-size: 25pt;
+	color: white;
+	margin-left: 33%;
+	margin-right: 20%;
+	z-index: 9;
+	-webkit-text-stroke: 1px black;
+}
+
+#mordy {
+	margin-top: 5%;
+	margin-left: 10%;
+	max-width: 20%;
+}
+
+#mordy > img {
+	margin-top: 50%;
+}
+
+#rigby {
+	margin-top: 30%;
+	margin-left: 24%;
+	padding-right: 60%;
+	padding-bottom: 20%;
+	max-width: 20%;
+}
+
+#benson {
+	margin-top: 20%;
+	margin-left: 76%;
+	margin-right: 5%;
+	z-index: 8;
+}
+
+#benson > img {
+	max-width: 30%; 
+	height: auto;
+}
+
+#mman {
+	margin-left: 40%;
+	margin-top: 27%;
+	z-index: 8;
+}
+
+#mman > img {
+	margin-left: 30%;
+	max-width: 30%; 
+	height: auto;
+}
+
+#rslogo {
+	margin-top: -5%;
+	margin-left: 35%;
+	max-width: 100%;
+	height: auto;
+}
+
+#rslogo > img {
+	max-width: 50%;
+}
+
+#jokebutton {
+	margin-left: 55%;
+	margin-top: 25%;
+}
+
+#jokebutton > button {
+	background-image: url(../assets/button.png);
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	width: 405px;
+	height: 115px;
+}
+
+#jokebutton > button:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+
+#jokebutton > button:active {
+	background-color: rgba(255,255,255,0.2);
+}
+
+#bg {
+	width: 110%;
+	margin-top: -20%;
+	margin-left: -5%;
+	z-index: 0;
+}
+
+#largehill {
+	width: 110%;
+	margin-top: 30%;
+	margin-left: -5%;
+	z-index: 8;
+}
+
+#brighthill {
+	width: 101%;
+	margin-top: 27%;
+	margin-left: 30%;
+	z-index: 7;
+	overflow-y: hidden;
+}
+
+#ltree {
+	z-index: 7;
+	margin-top: -20%;
+	margin-left: -5%;
+	margin-right: 60%;
+}
+
+#rtree {
+	width: 72%;
+	z-index: 6;
+	margin-top: -25%;
+	margin-left: 33%
+}
+
+#lshrubbery {
+	z-index: 6;
+	margin-left: 0;
+	margin-top: 13%;
+	margin-right: 60%;
+}
+
+#rshrubbery {
+	z-index: 5;
+	margin-left: 65%;
+	margin-top: 26%;
+}
+
+@font-face {
+    font-family: 'the_rainmakerregular';
+    src: url('../fonts/the_rainmaker-webfont.woff2') format('woff2'),
+         url('../fonts/the_rainmaker-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
